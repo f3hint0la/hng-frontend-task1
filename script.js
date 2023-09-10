@@ -18,19 +18,13 @@ function updateDateAndTime() {
   let secondUtc = date.getUTCSeconds();
   let millisSecondsUtc = date.getUTCMilliseconds();
 
+  const utcTime = date.getTime();
+
   const currentDayElm = document.querySelector(".currentDayOfTheWeek");
   currentDayElm.innerHTML = currentDay;
 
   const utcTimeElm = document.querySelector(".currentUTCTime");
-  utcTimeElm.innerHTML =
-    hourUtc +
-    ":" +
-    minuteUtc +
-    ":" +
-    secondUtc +
-    ":" +
-    millisSecondsUtc +
-    " - UTC Time";
+  utcTimeElm.innerHTML = utcTime;
 }
 
 updateDateAndTime();
