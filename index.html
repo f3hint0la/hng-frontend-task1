@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Fehintola's HNG Profile Card</title>
+  </head>
+  <body>
+    <div class="profileCard">
+      <div class="container">
+        <div class="image">
+          <img
+            src="profile.jpeg"
+            alt="Fehintola"
+            data-testid="slackDisplayImage"
+          />
+        </div>
+
+        <div class="cardInfo">
+          <h2 data-testid="slackUserName">FEHINTOLA</h2>
+          <p data-testid="myTrack">Frontend Track</p>
+
+          <p class="dateTime">
+            <span class="currentDayOfTheWeek" data-testid="currentDayOfTheWeek">
+            </span>
+            <span>|</span>
+            <span class="currentUTCTime" data-testid="currentUTCTime"> </span>
+          </p>
+
+          <div class="link">
+            <a
+              href="https://github.com/f3hint0la/hng-frontend-task1"
+              data-testid="githubURL"
+            >
+              <i class="fa-brands fa-github"></i>
+              Source Code
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
