@@ -19,4 +19,4 @@ The information required includes:
 - The GitHub URL for the source code
 
 ### Demo Link
-'
+https://f3hint0la.github.io/hng-frontend-task1/
