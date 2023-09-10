@@ -24,7 +24,7 @@ function updateDateAndTime() {
   currentDayElm.innerHTML = currentDay;
 
   const utcTimeElm = document.querySelector(".currentUTCTime");
-  utcTimeElm.innerHTML = utcTime + " - UTC TIME";
+  utcTimeElm.innerHTML = utcTime;
 }
 
 updateDateAndTime();
