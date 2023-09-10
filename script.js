@@ -13,11 +13,6 @@ function updateDateAndTime() {
 
   const currentDay = days[date.getDay()];
 
-  let hourUtc = date.getUTCHours();
-  let minuteUtc = date.getUTCMinutes();
-  let secondUtc = date.getUTCSeconds();
-  let millisSecondsUtc = date.getUTCMilliseconds();
-
   const utcTime = date.getTime();
 
   const currentDayElm = document.querySelector(".currentDayOfTheWeek");
