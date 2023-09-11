@@ -1,4 +1,4 @@
-function updateDateAndTime() {
+function displayDateAndTime() {
   const date = new Date();
 
   const days = [
@@ -20,6 +20,10 @@ function updateDateAndTime() {
 
   const utcTimeElm = document.querySelector(".currentUTCTime");
   utcTimeElm.innerHTML = utcTime;
+}
+
+function updateDateAndTime() {
+  setInterval(displayDateAndTime, 100);
 }
 
 updateDateAndTime();
