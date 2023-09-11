@@ -22,8 +22,5 @@ function displayDateAndTime() {
   utcTimeElm.innerHTML = utcTime;
 }
 
-function updateDateAndTime() {
-  setInterval(displayDateAndTime, 100);
-}
-
-updateDateAndTime();
+displayDateAndTime();
+setInterval(displayDateAndTime, 100);
